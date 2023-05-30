@@ -1,0 +1,33 @@
+{% extends 'baseclubs.html' %}
+{% block title %}
+    Title
+{% endblock title %}
+{% block body %}
+<div>
+    <img src="{{url_for('static',filename = 'Clubs.jpg')}}" alt="">
+</div>
+<section>
+    <div>
+        <h2 class="card-title"><style>h2{color: rgb(33, 172, 190);}</style> Clubs and Communities</h2>
+            <p class="card-text" class="bg-dark">Various student committees are active on the campus and look after specific aspects of student activities. Alumni, branding, food, placement, sports, photography, theatre, art and cultural festival are some of the areas handled by various students’ committees. A group of students also voluntarily get together to pursue an extra curricular or co-curricular activity with some broadly defined goals, and form a student club. For the past several years, some of the active students’ clubs on the campus include Soaring Eagles, IEEE, Scriptink, Sark, Corosit, PANTHERS, DeCoders, AURORA, QUEST, AVALANCHE,</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+</section>
+   
+   <div class="card text-white bg-secondary mb-3" style="max-width: 100%;">
+     <div class="card-header">
+        Why should you join the groups?
+   </div>
+     <div class="card-body">
+       <h5 class="card-title">Some of the reasons may be :</h5>
+       <p class="card-text">●  To develop your communication as well as your interpersonal skills<br>
+   ● Handle situations, conduct events, manage people and circumstances.<br>
+   ● To improve upon your technical abilities and core knowledge.<br>
+   ● To make new friends, meet new people, improve your circle and to stay updated.
+   </p>
+     </div>
+   </div>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+{% endblock body %}

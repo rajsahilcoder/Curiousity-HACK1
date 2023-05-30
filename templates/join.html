@@ -1,0 +1,22 @@
+{% extends 'basementor.html' %}
+{% block title %}
+Join Us!
+{% endblock title %}
+{% block body %}
+<section>
+    <div>
+        <h1><style>h1{color:rgb(180, 24, 24);}</style> Submit Your Documents Here!</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <p>Enter your resume here to get access to our website for mentoring our users!</p>
+                <p>Input File Here</p>
+                <label for="inputFile"></label>
+                <input type="file" name="inputFile">
+
+            </div>
+            <button type="submit" class="btn btn-outline-danger">Submit</button>
+        </form>
+    </div>
+</section>
+
+{% endblock body %}

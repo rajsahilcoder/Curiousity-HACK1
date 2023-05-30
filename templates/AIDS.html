@@ -1,0 +1,97 @@
+{% extends 'basebranch.html' %} {% block title %} AIDS {% endblock title %} {%
+block body %}
+<header>
+  <style>
+    header {
+      color: rgb(138, 126, 243);
+      padding: 10px;
+      /* background-image: url({{url_for('static',filename = 'headeraids.jpg')}}); */
+    }
+  </style>
+  <h1>
+    <b><i>Artificial intelligence and Data science</i></b>
+  </h1>
+</header>
+<section>
+  <h2>Gallery</h2>
+  <br />
+</section>
+<section>
+  <img
+    src="{{url_for('static',filename = 'possessed-photography-zbLW0FG8XU8-unsplash.jpg')}}"
+    alt="image pic"
+    height="300"
+    width="500"
+  />
+  <img
+    src="{{url_for('static',filename = 'markus-winkler-tGBXiHcPKrM-unsplash.jpg')}}"
+    alt="image pic"
+    height="300"
+    width="500"
+    allowfullscreen
+  />
+  <img
+    src="{{url_for('static',filename = 'ales-nesetril-Im7lZjxeLhg-unsplash.jpg')}}"
+    alt="image pic"
+    height="300"
+    width="500"
+  />
+</section>
+
+<section>
+  <h2>Notes</h2>
+  <br />
+</section>
+<section>
+  <ul>
+    <li>Mathematics-2</li>
+    <br />
+    <a href="{{url_for('static',filename = 'problems.pdf')}}"
+      ><img
+        src="{{url_for('static',filename = 'maths Tumb.PNG')}}"
+        alt="this is maths notes"
+        height="250"
+        width="150"
+    /></a>
+    <div>This section is for Mathematics notes</div>
+    <hr />
+    <li>Chemistry</li>
+    <br />
+    <a
+      href="{{url_for('static',filename = 'Instrumental Methods of Analysis  Jan 28th 2020-1 (1).pdf')}}"
+      ><img
+        src="{{url_for('static',filename = 'Chemistry thumb.PNG')}}"
+        alt="This is chemistry notes"
+        height="250"
+        width="150"
+    /></a>
+    <div>This section is for Chemistry notes</div>
+  </ul>
+</section>
+
+<section>
+  <h2>Syllabus</h2>
+  <br />
+</section>
+
+<section><h1>Some Facts</h1></section>
+<section>
+  <iframe
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/0fi6PQWGqX0"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</section>
+
+<footer>
+  <a href="#">FAQ</a>
+  <a href="#">Contact Us</a>
+  <a href="#">Terms and condition</a>
+  <a href="#">Privacy Policy</a>
+</footer>
+
+{% endblock body %}

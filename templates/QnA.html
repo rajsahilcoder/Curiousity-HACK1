@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block title %}
+QnA
+  
+{% endblock title %}
+
+{% block body %}
+
+
+  <div class = "contain my-3">
+  
+    <form action ="/templates/QnA.html" method ="POST">
+      <div class="contain mb-3">
+        <label for="title" class="form-label">Your Name</label>
+        <input type="text" id ="title" class = "form-control" name ="title">
+        
+      </div>
+      <div class="contain-fluid mb-3">
+        <label for="desc" class="form-label">Your Question or Suggestion</label>
+        <input type="text" class="form-control" id="desc" name ="desc">
+      </div>
+      
+      <button type="submit" class="btn btn-outline-danger">Submit</button>
+    </form>
+    </div>
+
+<section>    
+    <div class = "contain-fluid my-3">
+      <h1> </h1>
+        {% if allqna|length == 0 %}
+        <div class = "alert alert-dark" role = "alert">
+          No  Yet!
+    
+        </div>
+          
+        {% else %}
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col">SNo</th>
+              <th scope="col">Name</th>
+              <th scope="col">Question</th>
+              <th scope="col">Time</th>
+              <th scope="col">Answers or Reply</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for qna in allqna %}
+              
+            <!-- add a cond if approved by admin-true then add table row -->
+            <tr>
+              <th scope="row">{{loop.index}}</th>
+              <td>{{qna.title}}</td>
+              <td>{{qna.desc}}</td>
+              <td>{{qna.date_created}}</td>
+              
+              <td>
+                
+                <a href = "/templates/answer.html"button type="button" class="btn btn-outline-danger">Answer</button>
+                </td>
+            </tr>
+           
+      
+            {% endfor %}
+          </tbody>
+        </table>
+          
+        {% endif %}
+    
+    
+      
+    </div>
+
+</section>
+  
+
+
+
+   
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+{% endblock body %}

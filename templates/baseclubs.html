@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style1.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <meta charset="utf-8" />
+
+    <script src="{{ url_for('static', filename='js/test.js') }}"></script>
+
+    <title>{% block title %} {% endblock title %}</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/templates/blackpearl.html"
+                >Black Pearl</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Scriptink</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sark</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Soaring Eagles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/templates/adrenaline_racing.html"
+                >Team Adrenaline racing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Soaring Eagles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Decoders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Panthers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team AVALANCHE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Aurora</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Firing Pistons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">THE HALCYON</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% block body %} {% endblock body %}
+  </body>
+</html>

@@ -1,0 +1,341 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock title %}
+{% block body %}
+
+<section>
+
+  <div class="red">
+    <div>
+      <b>Main info</b>
+
+      <p style="color:seagreen"> <big><b>news</b></big> </p>
+      <hr style="border-width:0; height:4px; width:80%;background-color:#0c0e0f;">
+      <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, ipsam tempore. Repudiandae aut tempore provident voluptatem aperiam, praesentium possimus corporis in repellat sed quisquam, ducimus rerum recusandae unde quam? Vitae optio sapiente iure pariatur soluta eaque natus dolorum quasi? At velit possimus modi eveniet aperiam ipsum dolor sequi. Hic repellat, saepe modi necessitatibus reprehenderit sint voluptatum assumenda omnis eveniet cupiditate tempore voluptas officiis explicabo quidem quis quibusdam ab tenetur error voluptate. Perferendis maiores delectus quos ab porro consequuntur odio possimus velit molestiae, nam dolorum eos ex. Aliquam tenetur omnis suscipit blanditiis eligendi ullam deleniti natus officia amet, recusandae minima! Facere beatae velit ut esse a atque, officiis incidunt, dolore et eos reprehenderit? Quia mollitia nostrum totam provident, unde suscipit adipisci. Iure recusandae hic quod, quos saepe sequi natus repellendus soluta voluptates cum sapiente itaque fugit magni. Sint, veniam molestiae repudiandae porro doloremque vero commodi voluptatum fugiat, accusamus animi ex maxime ab similique qui. Amet qui, fugiat molestias necessitatibus maiores quam doloribus repellat provident ipsa, quia quisquam itaque, saepe ullam libero exercitationem asperiores quasi numquam porro alias? Sequi repellendus vel fugiat fuga obcaecati maxime excepturi expedita amet architecto, laboriosam animi illum ipsa ipsam magnam aperiam numquam nostrum! Omnis cum placeat quia in animi dolore accusamus reiciendis quibusdam, eius, soluta, adipisci necessitatibus. Obcaecati facilis recusandae ipsum enim dicta libero hic quasi laboriosam rem. Fugiat officiis exercitationem reprehenderit aspernatur consectetur earum, cum, et odit dolorum perspiciatis repellendus minima, eos magnam! Corrupti quas natus laboriosam beatae magni sequi suscipit animi deleniti rerum quia, fugit dolorem est mollitia. Temporibus libero, officia dicta error natus delectus. Aspernatur, asperiores deserunt temporibus quidem aliquam sunt blanditiis perspiciatis numquam labore impedit laboriosam eaque commodi adipisci hic mollitia tempora delectus voluptate? Itaque mollitia saepe sapiente consectetur quasi eos repellendus nulla autem, ducimus eveniet alias maiores, ipsum natus consequatur minus debitis?
+
+
+    </div>
+
+    <hr style="border-width:0; height:4px; width:80%;background-color:#0c0e11;">
+    <h1>News and Events</h1>
+
+    <section>
+      <div>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+  
+          .timeline {
+            width: 80%;
+            height: auto;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+          }
+  
+          .timeline ul {
+            list-style: none;
+          }
+  
+          .timeline ul li {
+            padding: 20px;
+            background-color: #1e1f22;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+          }
+  
+          .timeline ul li:last-child {
+            margin-bottom: 0;
+          }
+  
+          .timeline.content h1 {
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 30px;
+            margin-bottom: 10px;
+  
+          }
+  
+          .timeline.content p {
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 300;
+  
+          }
+  
+          @media only screen and (min-width:768px) {
+            .timeline::before {
+              content: '';
+              position: absolute;
+              height: 100%;
+              width: 2px;
+              left: 50%;
+              transform: translateX(-50%);
+              background-color: grey;
+            }
+  
+            .timeline ul li {
+              width: 50%;
+              margin-bottom: 50px;
+              position: relative;
+  
+            }
+  
+            .timeline ul li:nth-child(odd) {
+              float: left;
+              clear: right;
+              transform: translateX(-30px);
+            }
+  
+            .timeline ul li:nth-child(even) {
+              float: right;
+              clear: left;
+              transform: translateX(30px);
+            }
+  
+            .timeline ul li::after {
+              content: '';
+              position: absolute;
+              height: 20px;
+              width: 20px;
+              background-color: gray;
+              border-radius: 50%;
+              top: 0;
+            }
+  
+            .timeline ul li:nth-child(odd)::after {
+              transform: translate(50%, -50%);
+              right: -30px;
+  
+            }
+  
+            .timeline ul li:nth-child(even)::after {
+              transform: translate(-50%, -50%);
+              left: -30px;
+  
+            }
+          }
+        </style>
+        <div class="timeline">
+          <ul>
+            <li>
+              <div class="timeline_content">
+                <h1>Heading 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste ipsa ipsam possimus, commodi fuga
+                  non saepe perferendis necessitatibus in quae fugit magnam ut velit corrupti sed? Vero, voluptatem
+                  distinctio delectus doloribus quo eos!</p>
+  
+              </div>
+            </li>
+            <li>
+              <div class="timeline_content">
+                <h1>Heading 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste ipsa ipsam possimus, commodi fuga
+                  non saepe perferendis necessitatibus in quae fugit magnam ut velit corrupti sed? Vero, voluptatem
+                  distinctio delectus doloribus quo eos!</p>
+  
+              </div>
+            </li>
+            <li>
+              <div class="timeline_content">
+                <h1>Heading 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste ipsa ipsam possimus, commodi fuga
+                  non saepe perferendis necessitatibus in quae fugit magnam ut velit corrupti sed? Vero, voluptatem
+                  distinctio delectus doloribus quo eos!</p>
+  
+              </div>
+            </li>
+            <li>
+              <div class="timeline_content">
+                <h1>Heading 4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste ipsa ipsam possimus, commodi fuga
+                  non saepe perferendis necessitatibus in quae fugit magnam ut velit corrupti sed? Vero, voluptatem
+                  distinctio delectus doloribus quo eos!</p>
+  
+              </div>
+            </li>
+            <li>
+              <div class="timeline_content">
+                <h1>Heading 5</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste ipsa ipsam possimus, commodi fuga
+                  non saepe perferendis necessitatibus in quae fugit magnam ut velit corrupti sed? Vero, voluptatem
+                  distinctio delectus doloribus quo eos!</p>
+  
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+
+
+
+
+    <br><br><br><br><br><br>
+    <hr style="border-width:0; height:4px; width:80%;background-color:#0c0e11;">
+    <a href="/templates/gallery.html">
+      <h1>Gallery</h1>
+    </a>
+
+    <div class="img-slider">
+      <div class="slide active">
+        <img src="{{url_for('static',filename = 'r1.jpeg')}}" alt="">
+        <!-- <div class="info">
+                      <h2>Slide 01</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div> -->
+      </div>
+      <div class="slide">
+        <img src="{{url_for('static',filename = 'r2.jpeg')}}" alt="">
+        <!-- <div class="info">
+                      <h2>Slide 02</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div> -->
+      </div>
+      <div class="slide">
+        <img src="{{url_for('static',filename = '3.jpg')}}" alt="">
+        <!-- <div class="info">
+                      <h2>Slide 03</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div> -->
+      </div>
+      <div class="slide">
+        <img src="{{url_for('static',filename = '4.jpg')}}" alt="">
+        <!-- <div class="info">
+                      <h2>Slide 04</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div> -->
+      </div>
+      <div class="slide">
+        <img src="{{url_for('static',filename = '5.jpg')}}" alt="">
+        <!-- <div class="info">
+                      <h2>Slide 05</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div> -->
+      </div>
+      <div class="slide">
+        <img src="{{url_for('static',filename = '6.jpg')}}" alt="">
+        <!-- <div class="info">
+                      <h2>Slide 05</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div> -->
+      </div>
+      <div class="slide">
+        <img src="{{url_for('static',filename = '17.jpg')}}" alt="">
+        <!-- <div class="info">
+                      <h2>Slide 05</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div> -->
+      </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+    <hr style="border-width:0; height:4px; width:80%;background-color:#0c0e11;">
+
+    <div>
+      <h1>About Sit</h1>
+
+     
+    </div>
+
+    </p>
+
+  </div>
+</section>
+
+<script type="text/javascript">
+  var slides = document.querySelectorAll('.slide');
+  var btns = document.querySelectorAll('.btn');
+  let currentSlide = 1;
+
+  // Javascript for image slider manual navigation
+  var manualNav = function (manual) {
+    slides.forEach((slide) => {
+      slide.classList.remove('active');
+
+      btns.forEach((btn) => {
+        btn.classList.remove('active');
+      });
+    });
+
+    slides[manual].classList.add('active');
+    btns[manual].classList.add('active');
+  }
+
+  btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      manualNav(i);
+      currentSlide = i;
+    });
+  });
+
+  // Javascript for image slider autoplay navigation
+  var repeat = function (activeClass) {
+    let active = document.getElementsByClassName('active');
+    let i = 1;
+
+    var repeater = () => {
+      setTimeout(function () {
+        [...active].forEach((activeSlide) => {
+          activeSlide.classList.remove('active');
+        });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if (slides.length == i) {
+          i = 0;
+        }
+        if (i >= slides.length) {
+          return;
+        }
+        repeater();
+      }, 10000);
+    }
+    repeater();
+  }
+  repeat();
+</script>
+
+
+
+<script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="sidebars.js"></script>
+
+
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+{% endblock body %}
